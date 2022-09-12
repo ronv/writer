@@ -2,7 +2,7 @@
 
 Writer is content focused, minimal theme for Hugo. The theme is perfectly suitable for writers. No JS! AAA, 100/100 scores on Lighthouse, Gmetrix and Webpagetest!
 
-Demo: [https://minimalist-hugo.netlify.app/](https://minimalist-hugo.netlify.app/)
+Demo: [https://writer-hugo.netlify.app/](https://writer-hugo.netlify.app/)
 
 ![Theme screenshot](screenshot1.png)
 
