@@ -1,0 +1,75 @@
+baseurl: ''
+languageCode: en-us
+title: John Johnson
+googleAnalytics: ""
+disqusShortname: ""
+preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+disableHugoGeneratorInject: true
+pluralizeListTitles: false
+pygmentsCodeFences: false
+pygmentsUseClasses: false
+minify: false
+paginate: 9999
+disableKinds:
+  - section
+  - categories
+  - tags
+
+permalinks:
+  writing: /:year/:month/:day/:slug/
+
+params:
+  description: "Since 1987"
+
+frontmatter:
+  author: 
+  github: ''
+  facebook: ''
+  og_image: 
+  sitename: 
+  twitter: ''
+
+menu:
+  main:
+  - identifier: home
+    name: home 
+    url: /
+    weight: 1
+  - identifier: about
+    name: about 
+    url: /about/
+    weight: 2
+  - identifier: projects
+    name: projects
+    url: /projects/
+    weight: 3
+  - identifier: tags
+    name: tags
+    url: /tags/
+    weight: 4
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+outputFormats:
+  RSS:
+    mediatype: application/rss
+    baseName: atom
+  JSON:
+    mediatype: application/json
+    baseName: feed
+
+related:
+  includeNewer: true
+  threshold: 85
+  toLower: false
+  indices:
+    - name: tags
+      weight: 80
+    - name: keywords
+      weight: 40
+    - name: date
+      weight: 10

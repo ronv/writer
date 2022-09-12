@@ -1,0 +1,18 @@
+[context.production.environment]
+  HUGO_VERSION = "0.99.0"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.99.0"
+
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[[headers]]
+  for = "/*" # This defines which paths this specific [[headers]] block will cover.
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()"

@@ -1,0 +1,60 @@
+* {
+    font-size: 18px;
+    line-height: 1.6em;
+    box-sizing: border-box;
+}
+body { 
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+  helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+  sans-serif; 
+  padding: 1rem; 
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+main { 
+    max-width: 70ch;
+    margin: 0 auto;
+}
+header, footer {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+h1:first-child {
+	margin: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+  height: auto;
+}
+pre, code {
+  background: #eee;
+}
+pre code {
+  display: block;
+  padding: 1em;
+}
+code {
+  overflow: auto;
+  word-wrap: break-word;
+}
+a, a:visited { 
+    color: initial 
+}
+.list { 
+    list-style-type: none; 
+    padding-left: 0;
+	margin: 0;
+  list-style-position: inside;
+}
+.list li {
+	margin-bottom: 0.5rem;
+}
+time { 
+  font-variant-numeric: tabular-nums;
+}
+blockquote {
+  border-left: 2px solid;
+  padding: .5rem 1rem;
+  margin: 2rem 0;
+}
